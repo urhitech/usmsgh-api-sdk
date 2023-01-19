@@ -67,7 +67,6 @@ class UsmsghAPI
             return $e;
         } else {
             return json_decode(curl_exec( $this::$curl_handle ), true);
-            curl_close($this::$curl_handle);
         }
 
     }
