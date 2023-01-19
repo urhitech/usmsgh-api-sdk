@@ -73,33 +73,6 @@ class UsmsghAPI
 
 
     /**
-     * @param $url
-     * @param $api_token
-     * @param $post_fields
-     * @return mixed
-     *
-     * Send single / group SMS
-     */
-    public function send_sms($endpoint, $api_token, $sender_id, $phones, $message)
-    {
-        $single_phone = $phones;
-        $phones = explode(',', $phones);
-        if (count($phones) > 1) {
-            foreach ($phones as $phone) {
-                $this->send_server_response($endpoint, $api_token, $sender_id, $phone, $message, 'post');
-            }
-        } else {
-            // print_r($single_phone);exit();
-            $this->send_server_response($endpoint, $api_token, $sender_id, $single_phone, $message, 'post');
-        }
-
-        return false;
-    }
-
-
-
-
-    /**
      * @param $endpoint
      * @param $api_token
      * @param $sender_id
@@ -109,7 +82,7 @@ class UsmsghAPI
      *
      * Send single
      */
-    public function sendSingle($endpoint, $api_token, $sender_id, $phone, $message)
+    public function sendSMS($endpoint, $api_token, $sender_id, $phone, $message)
     {
         $this->send_server_response($endpoint, $api_token, $sender_id, $phone, $message, 'post');
     }
