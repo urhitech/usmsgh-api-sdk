@@ -14,12 +14,12 @@ PHP 5.6.0  and later
 ## Installation
 Via [Composer](http://getcomposer.org/)
 ```
-$ composer require supreme/urhitech-usmsgh
+$ composer require supreme/usmsgh-api-sdk
 ```
 
 Via Git Bash
 ```
-git clone https://github.com/urhitech/urhitech-smsgh-api.git
+git clone https://github.com/urhitech/usmsgh-api-sdk.git
 ```
 
 ## Documentation
