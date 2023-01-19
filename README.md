@@ -6,7 +6,7 @@ The library provides other features. For Example:
 1. Easy configuration path for fast setup and use
 2. Helpers for pagination.
 
-You can sign up for a USMSGH account at [usmsgh.com](https://www.usmsgh.com)
+You can sign up for a USMSGH account at [usmsgh.com](https://www.usmsgh.com) now
 
 ## Prerequisites
 PHP 5.6.0  and later
