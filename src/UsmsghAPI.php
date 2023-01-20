@@ -54,7 +54,7 @@ class UsmsghAPI
         curl_setopt ($this::$curl_handle, CURLOPT_RETURNTRANSFER, true);
         curl_setopt ($this::$curl_handle, CURLOPT_HTTPHEADER, [
             "accept: application/json",
-            "authorization: Bearer ".$api_token
+            "authorization: Bearer $api_token"
         ]);
 
         // Allow cURL function to execute 20sec
