@@ -84,9 +84,8 @@ class UsmsghAPI
      */
     public function sendSMS($endpoint, $api_token, $sender_id, $phone, $message)
     {
-        $this->send_server_response($endpoint, $api_token, $sender_id, $phone, $message, 'post');
+        return $this->send_server_response($endpoint, $api_token, $sender_id, $phone, $message, 'post');
     }
-
 
 
     /**
@@ -124,7 +123,6 @@ class UsmsghAPI
      */
     public function check_balance($url, $api_token)
     {
-
         return $this->send_server_response($url, $api_token, '', '', '');
     }
 
@@ -144,7 +142,6 @@ class UsmsghAPI
     }
 
 
-
     /**
      * @param $url
      * @param $api_token
@@ -156,8 +153,6 @@ class UsmsghAPI
     {
         return $this->send_server_response($url, $api_token, '', '', 'post');
     }
-
-
 
     /**
      * @param $url
@@ -185,7 +180,6 @@ class UsmsghAPI
     {
         return $this->send_server_response($url, $api_token, '', '', 'delete');
     }
-
 
 
     /**
