@@ -1,0 +1,42 @@
+{
+    "name": "usmsgh/usmsgh-api-sdk",
+    "version": "2.0.0",
+    "description": "PHP SDK for the Urhitech Bulk SMS API",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Majesty",
+            "email": "majestysoft2018@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Urhitech\\Usmsgh\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.0|^8.1|^8.2|^8.3",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "illuminate/notifications": "^8.83|^9.0|^10.0|^11.0",
+        "illuminate/support": "^8.83|^9.0|^10.0|^11.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.4.2",
+        "phpunit/phpunit": "^9.3"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Urhitech\\Usmsgh\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

@@ -1,0 +1,8 @@
+sms_test.php
+vendor
+test.php
+.idea
+composer.lock
+.phpunit.result.cache
+.DS_Store
+Thumbs.db
